@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{1EDAE45E-D715-4F82-997B-2DBD84F3BA03}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.Development.json">
+    <Files>
+      <File FileName="Startup.cs" Line="25" Column="31" />
+      <File FileName="appsettings.Development.json" Line="10" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DatingApp.API PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
