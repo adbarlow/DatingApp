@@ -1,37 +1,37 @@
 import { Component, OnInit } from '@angular/core';
-import {NgForm} from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { AuthService } from '../_services/auth.service';
 
-
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+	selector: 'app-nav',
+	templateUrl: './nav.component.html',
+	styleUrls: ['./nav.component.css']
 })
-
 export class NavComponent implements OnInit {
-  model: any = {};
+	model: any = {};
 
-  constructor(private authService: AuthService) { }
+	constructor(private authService: AuthService) {}
 
-  ngOnInit() {}
+	ngOnInit() {}
 
-  login() {
-    this.authService.login(this.model).subscribe(next => {
-      console.log('Log in successful');
-    }, error => {
-      console.log('failed login');
-    });
-  }
+	login() {
+		this.authService.login(this.model).subscribe(
+			next => {
+				console.log('Log in successful');
+			},
+			error => {
+				console.log(error);
+			}
+		);
+	}
 
-  loggedIn() {
-    const token = localStorage.getItem('token');
-    return !!token;
-  }
+	loggedIn() {
+		const token = localStorage.getItem('token');
+		return !!token;
+	}
 
-  logout() {
-    localStorage.removeItem('token');
-    console.log('logged out');
-  }
-
+	logout() {
+		localStorage.removeItem('token');
+		console.log('logged out');
+	}
 }
